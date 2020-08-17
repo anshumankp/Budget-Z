@@ -1,7 +1,7 @@
 {
-  "name": "buddy-app",
+  "name": "Budget-Z",
   "version": "1.0.0",
-  "description": "Buddy App provides basic housekeeping utilities such as a contact keeper, To-do list, an expense tracker and so on...",
+  "description": "Budget-Z is a single page web application created using MERN stack, along with redux and chart-js.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
