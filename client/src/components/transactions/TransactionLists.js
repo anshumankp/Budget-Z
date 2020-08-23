@@ -66,6 +66,7 @@ const TransactionLists = ({
                 text={transaction.text}
                 trans_id={transaction._id}
                 classification={transaction.classification}
+                key={transaction._id}
               />
             ))
           ) : (

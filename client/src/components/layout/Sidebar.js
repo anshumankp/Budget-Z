@@ -79,6 +79,7 @@ const SideBar = () => {
           $navOpen={isNavOpen}
           to={item.path}
           $active={item.path === activePath}
+          key={item.id}
           onClick={() => setActivePath(item.path)}
         >
           <i class={item.icon}> </i>

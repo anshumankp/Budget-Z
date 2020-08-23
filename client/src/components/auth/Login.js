@@ -43,6 +43,7 @@ const Login = ({ login, toggleRegister, clearAlerts, setAlert }) => {
             type='text'
             placeholder='Username'
             onChange={onChange}
+            autoComplete='new-password'
           />
         </div>
         <div className='input__with__icons'>
@@ -53,6 +54,7 @@ const Login = ({ login, toggleRegister, clearAlerts, setAlert }) => {
             type='password'
             placeholder='Password'
             onChange={onChange}
+            autoComplete='new-password'
           />
         </div>
       </div>

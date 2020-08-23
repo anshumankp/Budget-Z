@@ -42,10 +42,11 @@ export const Pagination = ({
   }
   return (
     <PaginateSection>
-      {pageNumbers.map(number => (
+      {pageNumbers.map((number, id) => (
         <PaginateButton
           onClick={() => paginate(number)}
           active={number === currentPage}
+          key={id}
         >
           {number}
         </PaginateButton>

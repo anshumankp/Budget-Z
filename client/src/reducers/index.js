@@ -7,19 +7,11 @@ import loadingReducer from './loadingReducer';
 import { LOGOUT } from '../actions/types';
 import activePeriodReducer from './activePeriodReducer';
 
-// export default combineReducers({
-//   auth: authReducer,
-//   alert: alertReducer,
-//   transaction: transactionReducer,
-//   activeMonth: activeMonthReducer
-// });
-
 const appReducer = combineReducers({
   auth: authReducer,
   alert: alertReducer,
   transaction: transactionReducer,
   activePeriod: activePeriodReducer,
-
   loading: loadingReducer
 });
 

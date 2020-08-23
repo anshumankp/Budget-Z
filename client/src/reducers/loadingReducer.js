@@ -8,7 +8,6 @@ import {
 const initialState = {
   transactionsLoading: false,
   userLoading: false,
-
   msg: 'Please wait...'
 };
 
