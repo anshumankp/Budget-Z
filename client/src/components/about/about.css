@@ -11,7 +11,7 @@
 }
 
 .social__container {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 14px;
   display: flex;
   min-height: 80px;
@@ -19,7 +19,6 @@
   height: 100%;
   width: 100%;
   justify-content: center;
-  align-items: center;
 }
 
 .about__tabs {
@@ -32,9 +31,7 @@
 
 .about__content {
   margin: 40px 0px;
-  text-align: center;
-  align-content: center;
-  flex: 1;
+
   height: 100%;
   width: 100%;
 }

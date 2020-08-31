@@ -1,30 +1,8 @@
 import React, { useState } from 'react';
 import './about.css';
+
+import SocialContainer from './SocialContainer';
 import styled from 'styled-components';
-
-const StyledSocialButton = styled.a`
-  padding: 5px;
-  margin: 5px 10px;
-  align-items: center;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  border: 1.5px solid grey;
-  color: grey;
-  background-color: white;
-  outline: none;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-
-  :hover {
-    border: 1px dotted black;
-    background-color: #333;
-    transform: scale(1.15);
-    i {
-      color: white;
-    }
-  }
-`;
 
 const StyledButton = styled.button`
   width: 170px;
@@ -87,15 +65,17 @@ const About = () => {
               <div className='about__content'>
                 <p>
                   This is a single page web application developed using MERN
-                  stack, along with Redux and Chart-js.
+                  stack (with Redux and Chart-js).
                 </p>
                 <p>
-                  For feedbacks or suggestions for improvement, please reach out
-                  to me at
+                  Please drop your feedback, suggestions or enquiries at:{' '}
+                  <span style={{ fontWeight: 'bold' }}>
+                    anshuman.kp018@gmail.com
+                  </span>
                 </p>
-                <p style={{ fontWeight: 'bold' }}>anshuman.kp018@gmail.com</p>
               </div>
               <StyledLine />
+              <SocialContainer />
             </React.Fragment>
           ),
           2: (
@@ -103,33 +83,15 @@ const About = () => {
               <StyledHeading>About the Developer</StyledHeading>
               <StyledLine />
               <div className='about__content'>
+                <p>Hey! I'm Anshuman Kashyap.</p>
                 <p>
-                  Hey! I'm Anshuman Kashyap. An aspiring full stack web
-                  developer with a liking towards minimal UI, garam chai and
-                  lifting iron :)
+                  A full stack developer based in Bangalore, intent on
+                  developing web applications using the latest technologies,
+                  clean code and UI which is easy on the eyes.
                 </p>
               </div>
               <StyledLine />
-              <div className='social__container'>
-                <StyledSocialButton
-                  href='https://www.facebook.com/anshuman.kashyap.10/'
-                  target='_blank'
-                >
-                  <i class='fa fa-facebook fa-2x'></i>
-                </StyledSocialButton>
-                <StyledSocialButton
-                  href='https://www.instagram.com/_anshuman_kp/'
-                  target='_blank'
-                >
-                  <i class='fa fa-instagram fa-2x'></i>
-                </StyledSocialButton>
-                <StyledSocialButton
-                  href='https://www.linkedin.com/in/anshuman-kashyap-212746199/'
-                  target='_blank'
-                >
-                  <i class='fa fa-linkedin fa-2x'></i>
-                </StyledSocialButton>
-              </div>
+              <SocialContainer />
             </React.Fragment>
           )
         }[activeTab]
